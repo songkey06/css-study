@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+<form action="#">
+    <label for="name2">이름:</label>
+    <input id="name" type="text" placeholder="이름을 입력하세요." value="김똘똘" disabled>
+    <br>
+
+    <label for="pw">패스워드:</label>
+    <input id="pw" type="password" maxlength="8">
+    <br>
+
+    <label for="email">이메일:</label>
+    <input id="email" type="email">
+
+    <br>
+
+    취미:
+    <input id="sport" type="checkbox" name="habbies">
+    <label for="sport">운동</label>
+
+    <input id="nap" type="checkbox" name="habbies" checked>
+    <label for="nap">낮잠</label>
+
+    <input id="talk" type="checkbox" name="habbies" disabled>
+    <label for="talk">훈수</label>
+
+    <br>
+
+    약관 동의:
+    <input type="radio" id="yes" name="agree" checked>
+    <label for="yes">예</label>
+
+    <input type="radio" id="no" name="agree">
+    <label for="no">아니오</label>
+
+    <br>
+
+    <input type="number" value="1" min="1" max="5">
+    <br>
+
+    <input type="range" value="5" min="1" max="10">
+    <br>
+
+    <input type="date" >
+    <br>
+
+    <input type="time">
+    <br>
+
+    <input type="datetime-local">
+    <br>
+
+    <input type="file" multiple accept="image/*">
+    <br>
+
+    <textarea rows="5" cols="10"></textarea>
+    <br>
+
+    <select name="coffee">
+        <option value="americano">아메리카노</option>
+        <option value="cafe-latte" selected>카페라떼</option>
+        <option value="vanilla-latte" disabled>바닐라라떼 (품절)</option>
+    </select>
+
+    <button type="button">일반버튼</button>
+    <button type="submit">서버전송버튼</button>
+    <button type="reset">폼리셋버튼</button>
+
+    <input type="submit" value="나는야버튼">
+
+</form>
+</body>
+</html>

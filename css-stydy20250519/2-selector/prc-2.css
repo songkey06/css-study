@@ -7,3 +7,9 @@ p.intro {
 #main-header {
     background: gray;
 }
+[type="button"] {
+    background: green;
+}
+[type="text"] {
+    color: red;
+}

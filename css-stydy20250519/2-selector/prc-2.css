@@ -1,22 +1,39 @@
 h1 {
     color: blue;
 }
+
 p.intro {
     font-size: 18px;
 }
+
 #main-header {
     background: gray;
 }
+
 [type="button"] {
     background: green;
 }
+
 [type="text"] {
     color: red;
 }
+
 a:hover {
     color: orange;
 }
+
 input:focus {
     background: yellow;
+}
 
+.intro {
+    color: purple;
+}
+
+.content .intro {
+    color: aqua;
+}
+
+#css\/text {
+    color: red;
 }

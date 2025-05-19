@@ -38,7 +38,7 @@ input:focus {
     color: red;
 }
 
-p.intro, #css\/text, #ex {
+section p {
     background: lightgray;
 }
 

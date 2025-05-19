@@ -37,3 +37,11 @@ input:focus {
 #css\/text {
     color: red;
 }
+
+p.intro, #css\/text, #ex {
+    background: lightgray;
+}
+
+.navigation:nth-child(n) {
+    font-size: 14px;
+}

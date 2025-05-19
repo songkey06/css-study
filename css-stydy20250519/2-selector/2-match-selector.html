@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .oran {
+            color: orange;
+        }
+
+        /* 일치선택자 : and조건으로 연결된 선택자*/
+        span.oran {
+            background: red;
+        }
+
+        li.oran {
+            font-style: italic;
+        }
+        li#apple.red {
+            font-size: 1.3rem;
+            color: red;
+        }
+        /* 3태그 다 갖고 있는 놈만 적용 */
+        .yellow.primary.danger {
+            border: 4px dashed yellowgreen;
+            font-style: italic;
+        }
+        h1.row.warning#title.skip {
+            color: violet;
+            background: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title" class="row warning skip">안녕하세요</h1>
+    <div>
+        <ul>
+            <li id="apple" class="red">사과</li>
+            <li>포도</li>
+            <li class="oran">오렌지</li>
+            <li class="red">체리</li>
+        </ul>
+        <div class="danger yellow primary"<p class="red">토마토</p>
+        <span class="oran">오랑지</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        p {
+            background: skyblue;
+            width: 50%;
+            height: 100px;
+            display: none;
+        }
+        div {
+            background: violet;
+            display: block;
+        }
+        ul {
+            background: dodgerblue;
+            display: block;
+        }
+        a {
+            background: yellowgreen;
+            display: block;
+        }
+        em {
+            background: coral;
+        }
+        span {
+            background: gold;
+        }
+        input {
+            width: 150px;
+            height: 70px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    블록요소:HTML 태그들은 기본적으로 처음부터 부여된 성질이 있음
+             블록요소는 박스모델을 만드는 요소
+             가로, 세로 길이를 가질 수 잇으며 레이아웃을 구성하는 요소
+
+    인라인 요소:텍스트를 처리하는 태그들
+                가로세로 길이를 가질 수 없음
+                ex) a, span, strong, em, b, abbr
+    인라인 블록:블록요소처럼 가로세로 사이즈조절이 되는데
+                인라인요소처럼 가로배치를 유지
+                ex) input, img
+                -->
+    <p>블록요소1</p>
+    <div><strong>블록</strong>요소2</div>
+    <ul>블록요소3</ul>
+
+    <hr>
+
+    <a href="#">인라 인요소1</a>
+    <em>인라인 요소2</em>
+    <span>인라인 요소3</span>
+
+    <hr>
+
+    <input type="text" value="1">
+    <input type="text" value="2">
+    <input type="text" value="3">
+
+    <img src="http://koreaits.com/files/extravar_upload/116/673/da55f02d0d3baf0821ede1f220d1939a.png" alt="afd">
+</body>
+</html>

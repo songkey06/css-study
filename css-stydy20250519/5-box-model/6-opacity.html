@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 20px auto;
+            width: fit-content;
+            /*background: red;*/
+        }
+        .input {
+            margin-bottom: 10px;
+        }
+        .input:nth-child(4) > input {
+            /*투명도 설정:0(완전투명), 1(보임)*/
+            /*opacity: 0;*/
+            /*화면에서도 사라지고 자리도 뺏김*/
+            /*display: none;*/
+            /*화면에서만 사라지고 자리는 유지*/
+            visibility: hidden;
+        }
+        .input input:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="input"><input type="text" value="1"></div>
+        <div class="input"><input type="text" value="2"></div>
+        <div class="input"><input type="text" value="3"></div>
+        <div class="input"><input type="text" value="4"></div>
+        <div class="input"><input type="text" value="5"></div>
+    </div>
+</body>
+</html>

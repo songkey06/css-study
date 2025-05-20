@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            /*전체 선택자: 모든 태그에게 스타일을 적용*/
+
+            /*패딩 또는 보더 속성으로 인해 박스가 커지는 걸 방지*/
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 470px;
+            height: 460px;
+            background: orange;
+            margin: 100px;
+            /* 패딩을 사용하면 박스의 크기가 패딩만큼 커짐*/
+            padding-top: 40px;
+            padding-left: 30px;
+        }
+
+        .box {
+            height: 50%;
+            background: tomato;
+            font-size: 2rem;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /*p {*/
+        /*    border: 3px solid blue;*/
+        /*    width: 90%;*/
+        /*    margin: 20px auto;*/
+        /*    font-size: 1.5em;*/
+        /*    padding: 25px;*/
+        /*    text-align: justify;*/
+        /*    line-height: 1.4;*/
+        /*}*/
+        .card {
+            width: 250px;
+            height: 350px;
+            border: 2px solid gray;
+            margin: 70px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .card .image {
+            width: 100%;
+            height: 250px;
+            border: 2px solid lightgray;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card .text {
+            border: 4px solid red;
+
+        }
+        .card .image img {
+            height: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <!--큰 박스하나의 작은 박스 2개 만들기-->
+    <div class="card">
+        <!--이미지는 액자에 담기-->
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGczUkEOO-9ILJQO2S-VG7IUbcuBcESl5EtA&s" alt="파산핑">
+        </div>
+        <p class="text">
+            blah~~~blah
+        </p>
+    </div>
+
+    <p>[Web발신]
+        너는 나를 존중해야 한다. 나는 발롱도르 5개와 수많은 개인 트로피를 들어올렸으며 2016 유로에서 포르투갈을 이끌고 우승을 차지했고 동시에 A매치 역대 최다 득점자이다. 또한 챔스 역대 최다
+        득점자이자 5번이나 우승을 차지한 레알 마드리드의 상징이다. 또한 36세의 나이에도 프리미어 리그에서 18골을 기록하고 챔스에서 5경기 연속 골을 기록하며 내가 세계 최고임을 증명해냈다. 은혜를 모르는
+        맨유 보드진과 팬들은 내가 맨유의 골칫덩이라고 쫓아냈지만, 내가 세계 최고이고 내가 팀보다 위대하다는 사실은 바뀌지 않는다. 내가 사우디에 간 이유는 메시에 대한 자격지심이 아니라 유럽에서 이룰 수
+        있는 모든 것을 이루었기에 아시아를 정복하기 위해 간 것이지, 단지 돈을 위해서 간 것이 아니다.
+    </p>
+
+    <div class="container">
+        <div class="box">안녕안녕</div>
+    </div>
+</body>
+</html>

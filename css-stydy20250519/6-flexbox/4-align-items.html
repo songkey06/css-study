@@ -7,30 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
     <style>
+
         * {
             box-sizing: border-box;
         }
         .wrapper {
-            width: 40%;
+            width: 80%;
             margin: 20px auto;
             border: 2px solid red;
             padding: 20px 0;
+            height: 800px;
             display: flex;
             flex-wrap: wrap;
-            flex-direction: row-reverse;
-            height: 800px;
-            justify-content: flex-end;
+
+            /* 주축 정렬 */
+            justify-content: center;
+            /*모든 행들이 하나의 그룹으로 움직임*/
+            /*align-content: space-between;*/
+            /*행별로 따로따로 그룹을 만들어 움직인다.*/
+            align-items: center;
         }
         .box {
-            width: 18%;
+            width: 300px;
             height: 100px;
+            line-height: 100px;
             border: 2px solid orange;
             border-radius: 15px;
-            font-size: 40px;}
+            font-size: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .center-item {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed blue;
+        }
 
     </style>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="center-item"></div>
+    </div>
     <div class="wrapper">
         <div class="box">A</div>
         <div class="box">B</div>

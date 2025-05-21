@@ -1,0 +1,13 @@
+/*@import url("reset.css");*/
+@import url("common.css");
+.main-title {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+.sub-title {
+    font-size: 0.8em;
+    background: violet;
+    font-family: sans-serif;
+}

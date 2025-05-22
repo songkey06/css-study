@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .container {
+            margin: 100px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            border: 4px dashed tomato;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:nth-child(2) {
+            background: greenyellow;
+            /*절대 위치: 특정 박스를 절대적인 기준으로 움직임.
+                         position이 absolute가 되면 자기 자리가 없어진다.
+                        움직이는 기준히 뷰포트 화면 전체가 기준
+                        */
+            position: absolute;
+            opacity: 0.5;
+
+            bottom: 50px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

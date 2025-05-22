@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+  <style>
+    body {
+      margin: 0;
+      height: 3000px;
+    }
+    header {
+      border-bottom: 2px solid gray;
+      border-top: 2px solid gray;
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      /* absolute를 걸면 가로길이 100%가 사라짐*/
+      position: fixed;
+      width: 100%;
+      background: white;
+      top: 0;
+      z-index: 9999;
+    }
+    header .logo {
+      font-size: 40px;
+      padding: 0;
+      margin: 20px 20px 30px;
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      display: flex;
+      margin-right: 20px;
+    }
+    header nav ul li {
+      margin-right: 30px;
+    }
+    main {
+      padding-top: 100px;
+    }
+    .ad-banner {
+      width: 150px;
+      height: 600px;
+      overflow: hidden;
+      position: absolute;
+      top: 250px;
+      right: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">로고</h1>
+    <nav>
+      <ul>
+        <li>소개</li>
+        <li>커뮤니티</li>
+        <li>자료실</li>
+        <li>회원가입</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p>adafafaf</p>
+  </main>
+  <aside>
+    <img class="ad-banner" src="https://file.miricanvas.com/template_thumb/2025/04/29/18/30/kwyl8kmx3xqgyfyh/thumb.webp?size=400" alt="광고 배너">
+  </aside>
+</body>
+</html>

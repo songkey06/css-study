@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="../5-box-model/common.css">
+    <style>
+        header {
+            background: rgba(0, 0, 0, 0.2);
+            height: 110px;
+            color: #fff;
+        }
+        header .inner {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            /*background: greenyellow;*/
+        }
+
+        header .logo {
+
+            width: 15%;
+
+            /*border: 3px solid green;*/
+            /*flex: 1;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header .logo img{
+            width: 100%;
+        }
+        header .gnb {
+            width: 45%;
+            /*border: 3px solid blue;*/
+            /*flex: 2.5;*/
+            display: flex;
+            align-items: center;
+        }
+        header nav ul {
+            display: flex;
+        }
+        header .gnb ul {
+            /*background: aqua;*/
+            margin-left: 50px;
+        }
+        header .gnb ul li {
+            /*border: 2px solid #000;*/
+            margin-right: 60px;
+        }
+        header .snb {
+            width: 30%;
+            /*border: 3px solid tomato;*/
+            /*flex: 2;*/
+            display: flex;
+            align-items: center;
+        }
+        header .snb ul {
+            /*background: violet;*/
+        }
+        header .snb ul li {
+            margin-right: 25px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="inner">
+            <h1 class="logo"><img src="https://kokokaki.github.io/img/logo1.png" alt="사이트 로고 이미지"></h1>
+
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사업영역</a></li>
+                    <li><a href="#">투자정보</a></li>
+                    <li><a href="#">인재채용</a></li>
+                </ul>
+            </nav>
+
+            <!--        nav.snb>ul>li*3>a[href="#"]-->
+            <nav class="snb">
+                <ul>
+                    <li><a href="#">알기쉬운 제품공정</a></li>
+                    <li><a href="#">내 삶속의 회사</a></li>
+                    <li><a href="#">제품검색</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</body>
+</html>

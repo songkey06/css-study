@@ -48,5 +48,34 @@ header .menu-open .bar-icon {
     font-size: 33px;
 }
 header .gnb {
-    display: none;
+    background: #000000;
+    color: #6a6a6a;
+    font-size: 40px;
+    padding: 70px 100px;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    transition: 0.6s;
+}
+header .gnb.on {
+    right: 0;
+}
+header .gnb .close{
+    /*border: 3px solid yellow;*/
+    color: #ffffff;
+    order: 1;
+}
+header .gnb ul{
+    /*border: 3px solid aqua;*/
+    margin-right: 200px;
+}
+header .gnb ul li {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+header .gnb ul li:hover {
+    color: #fff;
+
 }

@@ -1,12 +1,52 @@
-@import "common.css";
-.main-title {
-    font-size: 1.5rem;
-    color: orange;
-    font-weight: 700;
-    letter-spacing: 10px;
+@import url("common.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+    font-size: 17px;
+    font-family: "Noto Sans KR", sans-serif;
 }
-.sub-title {
-    font-size: 0.8em;
-    background: violet;
-    font-family: sans-serif;
+
+/* header style */
+header {
+    background: tomato;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    color: #fff;
+    font-weight: 700;
+}
+
+header .logo {
+    /*border: 3px solid yellow;*/
+    flex: 1;
+}
+header .logo img {
+    height: 60px;
+}
+header .intro {
+    /*border: 3px solid blue;*/
+    flex: 4;
+    margin-left: 30px;
+}
+header .menu-open {
+    /*border: 3px solid orange;*/
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+header .menu-open .menu-txt {
+    font-size: 20px;
+    margin-right: 15px;
+}
+header .menu-open .bar-icon {
+    font-size: 33px;
+}
+header .gnb {
+    display: none;
 }

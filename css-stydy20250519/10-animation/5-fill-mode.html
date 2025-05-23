@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        body, p {
+            margin: 0;
+        }
+
+        .container {
+            background: url("https://kokokaki.github.io/img/about_1.jpg") no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container p {
+            width: 60%;
+            font-size: 3em;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.3;
+            text-align: justify;
+            text-shadow: 3px 3px 8px #111;
+            opacity: 0%;
+            z-index: -1;
+
+            animation: fade-in-text 2s  linear;
+            /*에니메이션 끝난 후 100%상태 유지*/
+            /*animation-fill-mode: both;*/
+        }
+
+        @keyframes fade-in-text {
+            from {
+                opacity: 0%;
+                z-index: -1;
+                transform: translatey( -500px);
+            }
+            to {
+                opacity: 1;
+                z-index: 0;
+                transform: rotate(1080deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            국회의원과 정부는 법률안을 제출할 수 있다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다. 환경권의 내용과 행사에 관하여는 법률로 정한다.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            margin: 50px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+
+        .box1:hover {
+            /* 회전효과 */
+            /*transform: rotate(-720deg);*/
+            animation: inf-rotate 20s infinite;
+        }
+
+        @keyframes inf-rotate {
+            from {
+                transform: rotate(0);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .box2:hover {
+            /*이동 효과*/
+            transform: translate(-30px, -30px);
+        }
+        .box3:hover {
+            transform: scale(110%);
+        }
+        .wrap {
+            overflow: hidden;
+        }
+        .box4:hover {
+            transform: skew(15deg, 0);
+        }
+        .box5:hover {
+            transform: rotate(720deg) scale(0.7) translate(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="wrap">
+        <div class="box box3">3</div>
+    </div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+
+</body>
+</html>

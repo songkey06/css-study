@@ -1,80 +1,80 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
-    <!--파비콘 삽입-->
-    <link rel="icon" href="fabicon.ico">
-    <!-- custom css-->
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body class="my-body">
-    <header>
-        <h1 class="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="logo image">
-            </a>
-        </h1>
-        <h2 class="intro">WELCOME</h2>
-        <a href="#" class="menu-open">
-            <span class="menu-txt">MENU</span>
-            <span class="bar-icon">
-                <i class="fas fa-bars"></i>
-            </span>
-        </a>
+<!--<!DOCTYPE html>-->
+<!--<html lang="ko">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Title</title>-->
+<!--    &lt;!&ndash;파비콘 삽입&ndash;&gt;-->
+<!--    <link rel="icon" href="fabicon.ico">-->
+<!--    &lt;!&ndash; custom css&ndash;&gt;-->
+<!--    <link rel="stylesheet" href="styles/main.css">-->
+<!--</head>-->
+<!--<body class="my-body">-->
+<!--    <header>-->
+<!--        <h1 class="logo">-->
+<!--            <a href="index.html">-->
+<!--                <img src="img/logo.png" alt="logo image">-->
+<!--            </a>-->
+<!--        </h1>-->
+<!--        <h2 class="intro">WELCOME</h2>-->
+<!--        <a href="#" class="menu-open">-->
+<!--            <span class="menu-txt">MENU</span>-->
+<!--            <span class="bar-icon">-->
+<!--                <i class="fas fa-bars"></i>-->
+<!--            </span>-->
+<!--        </a>-->
 
-        <nav class="gnb">
-            <a href="#" class="close">
-                <i class="fas fa-times"></i>
-            </a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Favorite</a></li>
-            </ul>
-        </nav>
-    </header>
+<!--        <nav class="gnb">-->
+<!--            <a href="#" class="close">-->
+<!--                <i class="fas fa-times"></i>-->
+<!--            </a>-->
+<!--            <ul>-->
+<!--                <li><a href="#">Home</a></li>-->
+<!--                <li><a href="#">About</a></li>-->
+<!--                <li><a href="#">Work</a></li>-->
+<!--                <li><a href="#">Contact</a></li>-->
+<!--                <li><a href="#">News</a></li>-->
+<!--                <li><a href="#">Favorite</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </header>-->
 
-    <main>
-        <section class="visual">
-            <div class="overlay"></div>
-            <div class="txt">
-                <p>Creative design with Hong Studio</p>
-                <h3>
-                    Website & APP, <br />Responsive Web and <br />Brand Identity
-                </h3>
-                <a href="#">See the work</a>
-            </div>
-        </section>
-    </main>
+<!--    <main>-->
+<!--        <section class="visual">-->
+<!--            <div class="overlay"></div>-->
+<!--            <div class="txt">-->
+<!--                <p>Creative design with Hong Studio</p>-->
+<!--                <h3>-->
+<!--                    Website & APP, <br />Responsive Web and <br />Brand Identity-->
+<!--                </h3>-->
+<!--                <a href="#">See the work</a>-->
+<!--            </div>-->
+<!--        </section>-->
+<!--    </main>-->
 
-    <script>
-        //버튼의 요소 노드 취득
-        const menuBtn = document.querySelector('header .menu-open');
-        const closeBtn = document.querySelector('.gnb .close');
+<!--    <script>-->
+<!--        //버튼의 요소 노드 취득-->
+<!--        const menuBtn = document.querySelector('header .menu-open');-->
+<!--        const closeBtn = document.querySelector('.gnb .close');-->
 
-        const gnb = document.querySelector('.gnb');
+<!--        const gnb = document.querySelector('.gnb');-->
 
-        //클릭 이벤트 생성
-        menuBtn.addEventListener('click', () => {
-            gnb.classList.add('on');
-        });
+<!--        //클릭 이벤트 생성-->
+<!--        menuBtn.addEventListener('click', () => {-->
+<!--            gnb.classList.add('on');-->
+<!--        });-->
 
-        closeBtn.addEventListener('click', () => {
-            gnb.classList.remove('on');
-        });
+<!--        closeBtn.addEventListener('click', () => {-->
+<!--            gnb.classList.remove('on');-->
+<!--        });-->
 
-        document.addEventListener('keyup', e => {
-            if (e.key === 'Escape') {
-                gnb.classList.toggle('on');
-            }
-        });
-    </script>
-</body>
-</html>
+<!--        document.addEventListener('keyup', e => {-->
+<!--            if (e.key === 'Escape') {-->
+<!--                gnb.classList.toggle('on');-->
+<!--            }-->
+<!--        });-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
